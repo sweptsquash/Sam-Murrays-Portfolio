@@ -1,0 +1,368 @@
+$banner-image: '../images/header.png';
+$thinking: '../images/Thinking.png';
+$streaming: '../images/Streaming.png';
+
+$app-color: rgb(30,35,41);
+$app-navbar-color: rgba(30,35,41,.75);
+
+html,
+body {
+    background-color:$app-color !important;
+    color:rgb(255,255,255) !important;
+    font-family: 'Open Sans',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bebas Neue';
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
+}
+
+.AppHeader {
+    background-image: url($banner-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    text-align: center;
+    color:#fff;
+    padding-top:150px;
+    position: relative;
+}
+
+.AppHeader > .container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
+}
+
+.AppHeader > .container > h1 {
+    font-size:72px;
+}
+
+.AppHeader > .container > h3 {
+    font-size:32px;
+}
+
+.AppWaves {
+    position: absolute;
+    bottom:0;
+    min-width: 100%;
+}
+
+.AppWaves.inverted {
+    transform: rotate(180deg);
+    top: 100%;
+    bottom: auto;
+    z-index: 3;
+}
+
+.AppWaves > .waves {
+    width: 100%;
+    height: 8vh;
+}
+
+.navbar.bg-light {
+    background-color:$app-navbar-color !important;
+    border-bottom:1px solid $app-navbar-color;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
+    padding:0rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:rgba(255,255,255,.65) !important;
+    padding:1rem;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgba(255,255,255,1) !important;
+}
+
+/*
+.navbar-light .navbar-nav .nav-link.active::after {
+    content:"";
+    display:block;
+    background-color:rgb(255,255,255);
+    height:3px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active:hover,
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgba(255,255,255,1) !important;
+}*/
+
+.AppAbout {
+    padding:2rem 0 .5rem 0;
+    position: relative;
+}
+
+.AppExperience {
+    height:380px;
+    max-height:380px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    position: relative;
+    padding:2rem 30rem;
+}
+
+.AppExperiences > .AppExperience:first-of-type {
+    max-height:500px;
+    height:500px;
+    padding-top:8rem;
+}
+
+.AppExperience > .overlay,
+.AppThoughts > .overlay,
+.AppStreaming > .overlay {
+    background-color:rgba(0,0,0,.65%);
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position: absolute;
+    z-index:1;
+}
+
+.AppExperience .container-fluid {
+    z-index:2;
+    position: relative;
+}
+
+.VideoThumbnail {
+    border-radius: 6px;
+    border:1px solid rgba(112,112,112,.75);
+    display:inline-block;
+    position: relative;
+}
+
+.VideoThumbnail > img {
+    border-radius: 6px;
+}
+
+.VideoThumbnail .PlayIcon {
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
+    z-index:3;
+    color:rgba(255,255,255,.65);
+    font-size:72px;
+}
+
+.VideoThumbnail:hover .PlayIcon,
+.VideoThumbnail:focus .PlayIcon {
+    color:rgb(255,255,255);
+}
+
+.AppExperience .ServiceIcon {
+    display:inline-block;
+    margin-right:15px;
+    font-size:28px;
+    color:rgba(255,255,255,.65);
+}
+
+.AppExperience .ServiceIcon:hover,
+.AppExperience .ServiceIcon:focus {
+    color:rgb(255,255,255);
+}
+
+.AppExperience.no-overlay,
+.AppExperience.no-overlay .ServiceIcon {
+    color: rgb(0,0,0);
+}
+
+.Logo {
+    margin-bottom:30px;
+}
+
+.CharacterImage {
+    position: absolute;
+    height: 358px;
+    width: 250px;
+    background-size: contain;
+    bottom: -279px;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+}
+
+.AppThoughts,
+.AppStreaming {
+    background-image: url($thinking);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:500px;
+    position: relative;
+    padding:4rem 0;
+}
+
+.AppStreaming {
+    background-image: url($streaming);
+}
+
+.AppThoughts .container,
+.AppStreaming .container {
+    position: relative;
+    z-index:2;
+}
+
+.AppThoughts a,
+.AppStreaming a {
+    color: rgba(255,255,255,.65);
+    display:inline-block;
+}
+
+.AppThoughts a:hover,
+.AppThoughts a:focus,
+.AppStreaming a:hover,
+.AppStreaming a:focus {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+#Interviews .carousel {
+    height:700px;
+}
+
+#Interviews .carousel > .carousel-inner {
+    height:100%;
+}
+
+#Interviews .carousel > .carousel-inner > .carousel-item {
+    width:100%;
+    height:100%;
+}
+
+#Interviews .carousel > .carousel-inner > .carousel-item > .Thumbnail {
+    height:100%;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 70%;
+    position: absolute;
+    top:0;
+    left:0;
+    color:rgba(255,255,255,.75);
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, .75);
+    cursor: pointer;
+}
+
+#Interviews .carousel > .carousel-inner > .carousel-item > .Thumbnail:hover,
+#Interviews .carousel > .carousel-inner > .carousel-item > .Thumbnail:focus {
+    color:rgb(255,255,255);
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
+}
+
+#Interviews .carousel > .carousel-inner > .carousel-item > .Thumbnail > .ThumbnailCaption {
+    font-family: 'Bebas Neue';
+    position: absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size:24px;
+}
+
+#Interviews .carousel > .carousel-inner > .carousel-item > .Thumbnail > .ThumbnailCaption > p {
+    font-size:72px;
+}
+
+.AppQuote,
+.AppFooter {
+    font-family: 'Bebas Neue';
+    font-size:32px;
+    padding:2rem 0;
+}
+
+.AppFooter {
+    padding:1rem 0;
+}
+
+.AppContact {
+    background-color:rgb(255,255,255);
+    font-family: 'Bebas Neue';
+    padding:5rem 0;
+    font-size:24px;
+    color:rgb(0,0,0);
+}
+
+.AppContact h2 {
+    font-size:52px;
+    text-shadow: none;
+}
+
+.AppContact a {
+    color:rgba(0,0,0,.65);
+}
+
+.AppContact a:hover,
+.AppContact a:focus {
+    color:rgb(0,0,0);
+    text-decoration: none;
+}
+
+.modal {
+    color:rgb(0,0,0) !important;
+}
+
+.modal-title {
+    text-shadow: none;
+}
+
+@media screen and (max-width: 1920px) {
+    .AppExperience {
+        padding-left:15rem;
+        padding-right:15rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .AppExperience {
+        padding-left:3rem;
+        padding-right:3rem;
+    }
+
+    .CharacterImage {
+        bottom:-255px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .AppExperience {
+        padding-left:.3rem;
+        padding-right:.3rem;
+    }
+
+    .AppExperience > p:first-of-type {
+        margin-bottom:0;
+    }
+
+    .CharacterImage {
+        bottom:-275px;
+    }
+
+    .Logo {
+        margin-bottom:10px;
+    }
+}
