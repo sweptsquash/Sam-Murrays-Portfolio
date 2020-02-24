@@ -90,12 +90,12 @@ h5 {
 /*
 .navbar-light .navbar-nav .nav-link {
     .active {
-        :hover,
-        :focus {
+        &:hover,
+        &:focus {
             color:rgba(255,255,255,1) !important;
         }
 
-        ::after {
+        &::after {
             content:"";
             display:block;
             background-color:rgb(255,255,255);
@@ -107,8 +107,8 @@ h5 {
         }
     }
 
-    :hover,
-    :focus {
+    &:hover,
+    &:focus {
         color:rgba(255,255,255,1) !important;
     }
 }
@@ -120,8 +120,7 @@ h5 {
 }
 
 .AppExperience {
-    height:380px;
-    max-height:380px;
+    min-height:380px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 70%;
@@ -129,8 +128,7 @@ h5 {
     padding:2rem 30rem;
 
     &:first-of-type {
-        max-height:500px;
-        height:500px;
+        min-height:500px;
         padding-top:8rem;
     }
 
@@ -209,6 +207,7 @@ h5 {
     height: 358px;
     width: 250px;
     background-size: contain;
+    background-repeat: no-repeat;
     bottom: -279px;
     left: 30%;
     -webkit-transform: translate(-50%, -50%);
@@ -221,7 +220,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height:500px;
+    min-height:500px;
     position: relative;
     padding:4rem 0;
 }
@@ -376,5 +375,27 @@ h5 {
 
     .Logo {
         margin-bottom:10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .AppExperience {
+        &.Right {
+            .VideoThumbnail {
+                margin-bottom:2rem;
+            }
+        }
+
+        .VideoThumbnail {
+            img {
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+
+    .CharacterImage {
+        bottom:-670px;
+        width: 150px;
     }
 }

@@ -59,7 +59,7 @@ class Experience extends React.Component {
 		};
 
 		return(
-			<section className={'AppExperience' + (this.props.rightAligned ? ' Right' : '') + (!this.props.overlay ? ' no-overlay' : '')} style={{ backgroundImage:`url(${this.props.backgroundImg})` }}>
+			<section className={'AppExperience' + (this.props.rightAligned ? ' Right' : '') + (!this.props.overlay ? ' no-overlay' : '')} style={{ backgroundImage:`url(${this.props.backgroundImg})` }} id={this.props.id}>
 				<div className={'overlay' + (!this.props.overlay ? ' d-none' : '')}></div>
 				<Container fluid={true}>
 					{(this.props.rightAligned ?

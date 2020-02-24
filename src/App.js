@@ -10,7 +10,6 @@ import {
 	Row,
 	Col,
 } from 'reactstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLink } from '@fortawesome/pro-solid-svg-icons';
 import { faXbox, faPlaystation, faSteam } from '@fortawesome/free-brands-svg-icons';
 import Experience from './components/Experience';
@@ -132,7 +131,7 @@ function App() {
 					</ul>
 					<p>From getting a game title shown on Twitch&#39;s front page, to having the entire soundtrack drummed through, to linking up with brands to cross-promote, there&#39;s a wealth of rarely tapped options for reach out there.</p>
 					<p>I want to tap them all.</p>
-					<p>​I take a lot of pride in my work and have never worked for a product I don&#39;t believe in. If you&#39;ve reached this page, I believe in your product and I believe more strongly that I can make it a success.</p>
+					<p>I take a lot of pride in my work and have never worked for a product I don&#39;t believe in. If you&#39;ve reached this page, I believe in your product and I believe more strongly that I can make it a success.</p>
 				</div>
 				<div className="AppWaves inverted">
 					<svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
@@ -281,7 +280,7 @@ function App() {
 						</Col>
 					</Row>
 					<Row className="text-center">
-						<Col sm={6} xl={6}>
+						<Col sm={12} md={6}>
 							<a href="https://medium.com/@Squallmuzza/turning-toxic-into-terrific-salvaging-a-community-827492725435" target="_blank" rel="noopener noreferrer">
 								<p>
 									<img src={ToxicThumb} alt="" />
@@ -291,7 +290,7 @@ function App() {
 								</p>
 							</a>
 						</Col>
-						<Col sm={6} xl={6}>
+						<Col sm={12} md={6}>
 							<a href="https://medium.com/@Squallmuzza/why-i-dont-supportsmallstreamers-related-stream-teams-da1720ef85d2" target="_blank" rel="noopener noreferrer">
 								<p>
 									<img src={GrowthThumb} alt="" />
@@ -314,7 +313,7 @@ function App() {
 						</Col>
 					</Row>
 					<Row className="text-center">
-						<Col sm={6} xl={6}>
+						<Col sm={12} md={6}>
 							<a href="https://twitter.com/Squallmuzza/status/1022054924811677696" target="_blank" rel="noopener noreferrer">
 								<p>
 									<img src={TwitchLogoWhite} alt="" />
@@ -324,7 +323,7 @@ function App() {
 								</p>
 							</a>
 						</Col>
-						<Col sm={6} xl={6}>
+						<Col sm={12} md={6}>
 							<a href="https://www.udemy.com/course/the-complete-guide-to-twitch-streaming/" target="_blank" rel="noopener noreferrer">
 								<p>
 									<img src={UdemyLogo} alt="" />
