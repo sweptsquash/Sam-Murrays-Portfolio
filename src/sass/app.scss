@@ -2,14 +2,15 @@ $banner-image: '../images/header.png';
 $thinking: '../images/Thinking.png';
 $streaming: '../images/Streaming.png';
 
-$app-color: rgb(30,35,41);
-$app-navbar-color: rgba(30,35,41,.75);
+$app-color: rgb(30, 35, 41);
+$app-navbar-color: rgba(30, 35, 41, 0.75);
 
 html,
 body {
-    background-color:$app-color !important;
-    color:rgb(255,255,255) !important;
-    font-family: 'Open Sans',-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif !important;
+    background-color: $app-color !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue,
+        Arial, sans-serif !important;
 }
 
 h1,
@@ -27,31 +28,31 @@ h5 {
     background-size: cover;
     height: 600px;
     text-align: center;
-    color:#fff;
-    padding-top:150px;
+    color: #fff;
+    padding-top: 150px;
     position: relative;
 
     .container {
         position: absolute;
-        top:50%;
-        left:50%;
+        top: 50%;
+        left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
 
         h1 {
-            font-size:72px;
+            font-size: 72px;
         }
 
         h3 {
-            font-size:32px;
+            font-size: 32px;
         }
     }
 }
 
 .AppWaves {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     min-width: 100%;
 
     .waves {
@@ -68,22 +69,22 @@ h5 {
 }
 
 .navbar.bg-light {
-    background-color:$app-navbar-color !important;
-    border-bottom:1px solid $app-navbar-color;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.45);
-    padding:0rem 1rem;
+    background-color: $app-navbar-color !important;
+    border-bottom: 1px solid $app-navbar-color;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.45);
+    padding: 0rem 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color:rgba(255,255,255,.65) !important;
-    padding:1rem;
+    color: rgba(255, 255, 255, 0.65) !important;
+    padding: 1rem;
     position: relative;
 
     &:focus,
     &:hover {
-        color:rgba(255,255,255,1) !important;
+        color: rgba(255, 255, 255, 1) !important;
     }
 }
 
@@ -115,49 +116,49 @@ h5 {
 */
 
 .AppAbout {
-    padding:2rem 0 .5rem 0;
+    padding: 2rem 0 0.5rem 0;
     position: relative;
 }
 
 .AppExperience {
-    min-height:380px;
+    min-height: 380px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 70%;
     position: relative;
-    padding:2rem 30rem;
+    padding: 2rem 30rem;
 
     &:first-of-type {
-        min-height:500px;
-        padding-top:8rem;
+        min-height: 500px;
+        padding-top: 8rem;
     }
 
     .container-fluid {
-        z-index:2;
+        z-index: 2;
         position: relative;
     }
-    
+
     .ServiceIcon {
-        display:inline-block;
-        margin-right:15px;
-        font-size:28px;
-        color:rgba(255,255,255,.65);
-        
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 28px;
+        color: rgba(255, 255, 255, 0.65);
+
         &:hover,
         &:focus {
-            color:rgb(255,255,255);
+            color: rgb(255, 255, 255);
         }
     }
 
     &.no-overlay {
-        color: rgb(0,0,0);
+        color: rgb(0, 0, 0);
 
         .ServiceIcon {
-            color: rgba(0,0,0,.65);
+            color: rgba(0, 0, 0, 0.65);
 
             &:hover,
             &:focus {
-                color:rgb(0,0,0);
+                color: rgb(0, 0, 0);
             }
         }
     }
@@ -167,48 +168,48 @@ h5 {
 .AppThoughts,
 .AppStreaming {
     .overlay {
-        background-color:rgba(0,0,0,.65%);
-        width:100%;
-        height:100%;
-        left:0;
-        top:0;
+        background-color: rgba(0, 0, 0, 0.65%);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
         position: absolute;
-        z-index:1;
+        z-index: 1;
     }
 }
 
 .VideoThumbnail {
     border-radius: 6px;
-    border:1px solid rgba(112,112,112,.75);
-    display:inline-block;
+    border: 1px solid rgba(112, 112, 112, 0.75);
+    display: inline-block;
     position: relative;
-    
+
     img {
         border-radius: 6px;
     }
 
     .PlayIcon {
         position: absolute;
-        top:50%;
-        left:50%;
+        top: 50%;
+        left: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
-        z-index:3;
-        color:rgba(255,255,255,.65);
-        font-size:72px;
+        z-index: 3;
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 72px;
     }
-    
+
     &:hover,
     &:focus {
         .PlayIcon {
-            color:rgb(255,255,255);
+            color: rgb(255, 255, 255);
         }
     }
 }
 
 .Logo {
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
 .CharacterImage {
@@ -220,7 +221,7 @@ h5 {
     bottom: -279px;
     left: 30%;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .AppThoughts,
@@ -229,9 +230,9 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height:500px;
+    min-height: 500px;
     position: relative;
-    padding:4rem 0;
+    padding: 4rem 0;
 }
 
 .AppStreaming {
@@ -242,65 +243,65 @@ h5 {
 .AppStreaming {
     .container {
         position: relative;
-        z-index:2;
+        z-index: 2;
     }
 }
 
 .AppThoughts,
 .AppStreaming {
     a {
-        color: rgba(255,255,255,.65);
-        display:inline-block;
+        color: rgba(255, 255, 255, 0.65);
+        display: inline-block;
 
         &:hover,
         &:focus {
-            color: rgba(255,255,255,1);
+            color: rgba(255, 255, 255, 1);
             text-decoration: none;
         }
     }
 }
 
 #Interviews .carousel {
-    height:700px;
+    height: 700px;
 
     .carousel-inner {
-        height:100%;
+        height: 100%;
 
         .carousel-item {
-            width:100%;
-            height:100%;
-            
+            width: 100%;
+            height: 100%;
+
             .Thumbnail {
-                height:100%;
-                width:100%;
-                background-size:cover;
+                height: 100%;
+                width: 100%;
+                background-size: cover;
                 background-repeat: no-repeat;
-                background-position:100% 70%;
+                background-position: 100% 70%;
                 position: absolute;
-                top:0;
-                left:0;
-                color:rgba(255,255,255,.75);
-                text-shadow: 0px 3px 2px rgba(0, 0, 0, .75);
+                top: 0;
+                left: 0;
+                color: rgba(255, 255, 255, 0.75);
+                text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.75);
                 cursor: pointer;
 
                 &:hover,
                 &:focus {
-                    color:rgb(255,255,255);
+                    color: rgb(255, 255, 255);
                     text-shadow: 0px 3px 2px rgba(0, 0, 0, 1);
                 }
-                
+
                 .ThumbnailCaption {
                     font-family: 'Bebas Neue';
                     position: absolute;
-                    left:50%;
-                    top:50%;
+                    left: 50%;
+                    top: 50%;
                     -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
                     text-align: center;
-                    font-size:24px;
+                    font-size: 24px;
 
                     p {
-                        font-size:72px;
+                        font-size: 72px;
                     }
                 }
             }
@@ -311,39 +312,39 @@ h5 {
 .AppQuote,
 .AppFooter {
     font-family: 'Bebas Neue';
-    font-size:32px;
-    padding:2rem 0;
+    font-size: 32px;
+    padding: 2rem 0;
 }
 
 .AppFooter {
-    padding:1rem 0;
+    padding: 1rem 0;
 }
 
 .AppContact {
-    background-color:rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     font-family: 'Bebas Neue';
-    padding:5rem 0;
-    font-size:24px;
-    color:rgb(0,0,0);
+    padding: 5rem 0;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
 
     h2 {
-        font-size:52px;
+        font-size: 52px;
         text-shadow: none;
     }
 }
 
 .AppContact a {
-    color:rgba(0,0,0,.65);
+    color: rgba(0, 0, 0, 0.65);
 
     &:hover,
     &:focus {
-        color:rgb(0,0,0);
+        color: rgb(0, 0, 0);
         text-decoration: none;
     }
 }
 
 .modal {
-    color:rgb(0,0,0) !important;
+    color: rgb(0, 0, 0) !important;
 
     .modal-title {
         text-shadow: none;
@@ -352,38 +353,38 @@ h5 {
 
 @media screen and (max-width: 1920px) {
     .AppExperience {
-        padding-left:15rem;
-        padding-right:15rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
     }
 }
 
 @media screen and (max-width: 1280px) {
     .AppExperience {
-        padding-left:3rem;
-        padding-right:3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 
     .CharacterImage {
-        bottom:-255px;
+        bottom: -255px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .AppExperience {
-        padding-left:.3rem;
-        padding-right:.3rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
 
         p:first-of-type {
-            margin-bottom:0;
+            margin-bottom: 0;
         }
     }
 
     .CharacterImage {
-        bottom:-275px;
+        bottom: -275px;
     }
 
     .Logo {
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -391,20 +392,20 @@ h5 {
     .AppExperience {
         &.Right {
             .VideoThumbnail {
-                margin-bottom:2rem;
+                margin-bottom: 2rem;
             }
         }
 
         .VideoThumbnail {
             img {
-                width:100%;
-                height:auto;
+                width: 100%;
+                height: auto;
             }
         }
     }
 
     .CharacterImage {
-        bottom:-670px;
+        bottom: -670px;
         width: 150px;
     }
 }
