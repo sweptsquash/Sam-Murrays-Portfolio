@@ -3,6 +3,7 @@
 /public/js/*
 /public/css/*
 /public/fonts/*
+/public/index.html
 .DS_Store
 .vscode
 .npmrc
